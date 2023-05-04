@@ -81,10 +81,10 @@ public class Test {
                     Student student1 = new Student(firstName,lastName,age,gender,className);
                     allStudents.add(student1);
                 }
-
+                if(total == 3) break;
             }
         }
-        while (total < 3);
+        while (true);
 
         for (Student allStudent : allStudents) {
             System.out.println(allStudent.getClassName() + allStudent);
